@@ -1,3 +1,10 @@
+/*
+ * Author: Yuna Cho, but mostly Mr. Menchukov
+ * Date: 1/22/2025
+ * Description: This component is the moving ball which the user will need use to kill bricks by hitting them
+ * The ball will bounce across the walls in such a way that itś the reverse of the velocty by which itś been hit. it will be magenta, 
+ * though I was thinking that maybe I hsould do it yellow, but now it's magenta and no one can do anything about it
+ */
 import java.awt.*;
 
 public class Ball {
@@ -10,7 +17,7 @@ public class Ball {
 	//don't forget you need instance variables:
 	
 	
-	//constructor(s):
+	//constructor(for ball):
 	public Ball(int x, int y, int size){
 		this.x = x;
 		this.y = y;

@@ -1,9 +1,16 @@
+/*
+ * Author: Yuna Cho
+ * Date: 1/22/2025
+ * Description: This component is the user interactive paddle, the 
+ * only thing that the user had control over, which it needs to hit the ball to prevent it 
+ * from falling into the abyss so that you can kill all the bricks and watch as they blip out of existence
+ */
 import java.awt.*;
 
 public class Paddle {
 
 	//your code here!
-
+//the variables hold values for the x and y positions as well as the width, height, and velocity
 	//don't forget you need instance variables:
 	private int x;
 	private int y;
@@ -11,7 +18,7 @@ public class Paddle {
 	private int velocity;
 	private int height;
 	
-	//constructor(s):
+	//constructor( for paddle):
 	
 	public Paddle(int x, int y, int width, int height){
 		this.x = x;
@@ -25,7 +32,7 @@ public class Paddle {
 //precondition: color is not black, and the height and width is not 0; the position, or x and y are places in not a specific point that makes it imposssible for the blocks to be hit/for the ball to interact
 //not under the y pos of the paddle (if colour is smae as background, then what's the point of drawing it)
 //postcondition the paddle is to become blue will be magenta, and will be at a size and place that is assigned when the constructor is used. colours must be valid, and the paddle musn't be too large.
-
+//this sets the paddle to the colour blue and uses a constructor inside of a method
 	void draw(Graphics g){
 		g.setColor(Color.yellow);
 			g.setColor(Color.blue);
